@@ -1,1 +1,48 @@
-<h1>{{ message }}</h1>
+{% import 'macros.html' as macro%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% if title %}
+    <title> {{ title }}</title>
+    {% else %}
+    <title> Blog Spot </title>
+    {% endif %}
+    
+</head>
+
+<body>
+    <style>
+        body{
+            background-image: url('https://bit.ly/2SYFS2W');
+            background-size: ;
+        }
+    </style>
+       
+        <h1 style="text-align: center; font-family: 'Lacquer', sans-serif; color: indigo;" > {{message}} </h1>
+         
+        <br>
+        <br>
+        
+    
+        <div class="pill">
+            <div style="font-family: 'Marmelad', sans-serif; font-size: 40px; color: rgb(14, 14, 2);">
+                <h1 > Share your ideas and Create blog posts .</h1>
+                <p> A safe place where you can create your own <br>blogs and read through other people's blogs <br>at will, no judgement here </p>
+               
+            </div>
+           <button class="button" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"> Click to read blogs </button>
+        </div>
+    
+         
+              <div class="container">
+                <h1> Blog Away </h1>
+                  
+                <button type="submit" class="button">Read</button>
+              </div>
+            </form>
+          </div>
+
+</body>
+</html>

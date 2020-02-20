@@ -1,0 +1,18 @@
+{% macro displayBlogList(Blog_list) %}
+
+    {% for blog in blog_list %}
+        <li>{{ blog.title}}</li>
+
+
+        <div class="col-sm-4">
+            <img src="" >
+            <li class="text-center">
+                <a href="">
+                    {{ blog.title|truncate(10)}}</a>
+            </li>
+        </div>
+        
+
+    {% endfor %}
+
+{% endmacro %}
