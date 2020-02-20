@@ -7,17 +7,17 @@ app = Flask(__name__)
 def index():
     render_template('index.html')
 
-@app.route('/')
+@app.route('/about')
 def about():
     render_template('about.html')
 
-@app.route('/')
+@app.route('/post')
+def post():
+    render_template('post.html')
+
+@app.route('/contact')
 def contact():
     render_template('contact.html')
-
-@app.route('/')
-def index():
-    render_template('index.html')
 
 if __name__ == '__main__':
     app.run(debug = True)
