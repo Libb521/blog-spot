@@ -1,3 +1,4 @@
+{% extends 'base.html'%}
 {% import 'macros.html' as macro%}
 <!DOCTYPE html>
 <html lang="en">
@@ -13,12 +14,14 @@
 </head>
 
 <body>
+    {% block content %}
     <style>
         body{
             background-image: url('https://bit.ly/2SYFS2W');
-            background-size: ;
+            background-size: cover;
         }
     </style>
+  
        
         <h1 style="text-align: center; font-family: 'Lacquer', sans-serif; color: indigo;" > {{message}} </h1>
          
@@ -28,7 +31,7 @@
     
         <div class="pill">
             <div style="font-family: 'Marmelad', sans-serif; font-size: 40px; color: rgb(14, 14, 2);">
-                <h1 > Share your ideas and Create blog posts .</h1>
+                
                 <p> A safe place where you can create your own <br>blogs and read through other people's blogs <br>at will, no judgement here </p>
                
             </div>
@@ -43,6 +46,6 @@
               </div>
             </form>
           </div>
-
+{% endblock %}
 </body>
 </html>
