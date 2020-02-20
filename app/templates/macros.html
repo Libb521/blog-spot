@@ -1,3 +1,10 @@
+% extends 'base.html'%}
+
+{% block styles%}
+
+    <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+{% endblock %}
+
 {% macro displayBlogList(Blog_list) %}
 
     {% for blog in blog_list %}

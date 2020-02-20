@@ -23,7 +23,7 @@
     </style>
   
        
-        <h1 style="text-align: center; font-family: 'Lacquer', sans-serif; color: indigo;" > {{message}} </h1>
+        <h1 style="text-align: center; color: rgb(48, 16, 3); background-color: ;" > {{message}} </h1>
          
         <br>
         <br>
@@ -31,20 +31,39 @@
     
         <div class="pill">
             <div style="font-family: 'Marmelad', sans-serif; font-size: 40px; color: rgb(14, 14, 2);">
-                
-                <p> A safe place where you can create your own <br>blogs and read through other people's blogs <br>at will, no judgement here </p>
+                <div style="text-align: center; border: 1px solid rgb(36, 2, 2);background-color: rgba(240, 211, 211, 0.671);">
+                    <p> A safe place where you can create your own <br>blogs and read through other people's blogs <br>at will, no judgement here </p>
+                </div>
                
-            </div>
-           <button class="button" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"> Click to read blogs </button>
-        </div>
-    
-         
-              <div class="container">
-                <h1> Blog Away </h1>
+               
+                <div class="container">
+                    <h2>Blog Posts</h2>
+                    <!-- Trigger the modal with a button -->
+                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Just For you</button>
                   
-                <button type="submit" class="button">Read</button>
-              </div>
-            </form>
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal" role="dialog">
+                      <div class="modal-dialog">
+                      
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Libby's</h4>
+                          </div>
+                          <div class="modal-body">
+                            <p>For all your latest blogs and posts around, stay updated</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Exit</button>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    
+                  </div>
+    
           </div>
 {% endblock %}
 </body>

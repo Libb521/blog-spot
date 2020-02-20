@@ -1,0 +1,35 @@
+
+{% block styles%}
+    {{ super() }}
+    <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+{% endblock %}
+
+{% block content %}
+
+
+<hi> add blog </hi>
+
+<div>
+<form name="addForm" id="addForm" action=" {{ url_for('main.addpost' ) }}" method="POST">
+  
+    <div class="container">
+      <label for="Title"><b>Title</b></label>
+      <input type="text" placeholder="Title" name="Title" id="Title" required>
+  
+      <label for="Subtitle"><b>Subtitle</b></label>
+      <input type="text" placeholder="Subtitle" name="Subtitle" id="Subtitle" required>
+
+      <label for="Author"><b>Author</b></label>
+      <input type="text" placeholder="Author" name="Author" id="Author" required>
+
+      
+      <label for="Blog content"><b>Blog content</b></label>
+    <textarea id="Content" name="Content" placeholder="blog content.." style="width:625px; height: 100px;" ></textarea>
+  
+      <button type="submit" class="button" >Submit Blog</button>
+    
+    </div>
+  </form>
+  </div>
+
+  {% endblock %}
